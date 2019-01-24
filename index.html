@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="DateTime">1/23/19 12:57pm</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById('DateTime').innerHTML;
+  var dateTimeArray = str.split(" ");
+  var dateArray = dateTimeArray[0].split("/"); 
+  var month = Number(dateArray[0]);
+  var day = Number(dateArray[1]);
+  var year = Number(dateArray[2]);
+  var end = year+2000;
+  document.getElementById("demo").innerHTML = end;
+}
+</script>
+
+</body>
+</html>
+
+ul>li*4
